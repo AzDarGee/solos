@@ -89,11 +89,6 @@ Copy the key to your clipboard from the terminal and paste it in the ssh keys in
 cat ~/.ssh/id_ed25519.pub
 ```
 
-Then clone the repository into your environment workspace on Cloud 9
-
-```
-git clone git@github.com:GITHUB_USER_NAME/solos.git
-```
 
 ### 7. Setup postgresql on cloud 9 
 
@@ -105,4 +100,14 @@ creatuser --interactive
 Enter the name of the user: ubuntu
 
 
+### 8. Install Webpacker
 
+```
+rails webpacker:install
+```
+
+### 9. Start rails server
+
+```
+rails s
+```
