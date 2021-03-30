@@ -1,6 +1,6 @@
 <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-scroll">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
     <div class="container-fluid">
       <%=  link_to 'SoloS', root_path, class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -15,6 +15,28 @@
           </li>
           <li class="nav-item">
             <%= link_to 'Projects', projects_path, class: "nav-link" %>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Experts
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Guitarist</a></li>
+              <li><a class="dropdown-item" href="#">Ruby on Rails Developer</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">All</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <%= link_to 'Map', '/', class: "nav-link" %>
@@ -56,4 +78,7 @@
     </div>
   </nav>
   <!-- Navbar -->
+
+
+  
 </header>
