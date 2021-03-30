@@ -1,6 +1,12 @@
 <% if flash[:notice] %>
-    <div class="alert alert-info close"><%= notice %></div>
+    <div class="alert alert-info close system-messages">
+        <%= notice %>
+    </div>
 <% end %>
 <% if flash[:alert] %>
-    <div class="alert alert-info close"><%= alert %></div>
+    <div class="alert alert-info close system-messages">
+        <%= alert %>
+    </div>
 <% end %>
+
+
