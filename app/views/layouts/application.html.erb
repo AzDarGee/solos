@@ -18,8 +18,8 @@
     /> %>
 
     <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_packs_with_chunks_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_packs_with_chunks_tag 'application', 'data-turbolinks-track': 'reload' %>
     
     <!-- MDB -->
     <link
@@ -31,23 +31,8 @@
 
   <body>
     <%= render 'shared/nav' %>
-    
-
-    <div class="row">
-
-      <div class="col-1"></div>
-
-      <div class="col-10">
-        <%= render 'shared/messages' %> 
-        <%= yield %>
-      </div>
-
-      <div class="col-1"></div>
-      
-    </div>
-
-    
-  
+    <%= render 'shared/messages' %> 
+    <%= yield %>
   </body>
   <script
     type="text/javascript"

@@ -8,10 +8,16 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'mdbootstrap/scss/mdb-free'
-import 'mdbootstrap/js/mdb'
+// import 'mdbootstrap/js/mdb'
 // require("../stylesheets/application.scss")
 import "@fortawesome/fontawesome-free/css/all"
 import '../src/bootstrap.js'
+
+
+// Images
+require.context('../images', true)
+
+
 
 Rails.start()
 Turbolinks.start()
@@ -30,3 +36,4 @@ ActiveStorage.start()
 //       trigger: 'hover',
 //     });
 //   });
+
