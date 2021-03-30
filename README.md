@@ -110,4 +110,5 @@ rails webpacker:install
 
 ```
 rails s
+WEBPACKER_DEV_SERVER_HOST=0.0.0.0 ./bin/webpack-dev-server
 ```
