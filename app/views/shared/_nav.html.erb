@@ -39,11 +39,14 @@
             </ul>
           </li>
           <li class="nav-item">
-            <%= link_to 'Map', '/', class: "nav-link" %>
+            <%= link_to 'Map', map_map_path, class: "nav-link" %>
           </li>
         </ul>
         <ul class="navbar-nav d-flex flex-row">
           <% if current_user %>
+            <li>
+              <%= link_to '+ Project', new_project_path, class: "nav-link me-3 me-lg-0" %>
+            </li>
             <li>
               <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link me-3 me-lg-0" %>
             </li>
@@ -79,6 +82,4 @@
   </nav>
   <!-- Navbar -->
 
-
-  
 </header>

@@ -1,6 +1,10 @@
 .projects {
-    position: inherit;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.project-card {
+    max-width: 21rem;
+    display: inline-block;
+    padding: 0.5rem;
 }

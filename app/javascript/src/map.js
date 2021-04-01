@@ -1,0 +1,16 @@
+
+
+$( document ).on('turbolinks:load', function() {
+ 
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXNoZGFyamkiLCJhIjoiY2ttejd2dnY5MGI5MTJ2cWw5bWJuM2xtcCJ9.ncPbLKGcTot6yCJbb10WQg';
+    let map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+
+})
+
+
+

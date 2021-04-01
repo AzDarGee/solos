@@ -14,10 +14,12 @@
     "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
     "jquery": "^3.6.0",
+    "mapbox-gl": "^2.2.0",
     "mdbootstrap": "^4.19.2",
     "popper.js": "^1.16.1",
     "rails-erb-loader": "^5.5.2",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "worker-loader": "^3.0.8"
   },
   "version": "0.1.0",
   "devDependencies": {

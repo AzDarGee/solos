@@ -13,8 +13,13 @@ import 'mdbootstrap/scss/mdb-free'
 import "@fortawesome/fontawesome-free/css/all"
 import '../src/bootstrap.js'
 
+// Import MapBox & Map
+import mapboxgl from "mapbox-gl"
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+import "mapbox-gl/dist/mapbox-gl.css"
+import "../src/map.js"
 
-// Images
+// Import Images
 require.context('../images', true)
 
 
@@ -23,17 +28,17 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-// $(document).on('turbolinks:load', function() {
-//     $('body').tooltip({
-//       selector: '[data-toggle="tooltip"]',
-//       container: 'body',
-//     });
+$(document).on('turbolinks:load', function() {
+    $('body').tooltip({
+      selector: '[data-toggle="tooltip"]',
+      container: 'body',
+    });
   
-//     $('body').popover({
-//       selector: '[data-toggle="popover"]',
-//       container: 'body',
-//       html: true,
-//       trigger: 'hover',
-//     });
-//   });
+    $('body').popover({
+      selector: '[data-toggle="popover"]',
+      container: 'body',
+      html: true,
+      trigger: 'hover',
+    });
+  });
 

@@ -8,6 +8,7 @@ environment.plugins.append(
     jQuery: 'jquery',
     jquery: 'jquery',
     Popper: ['popper.js', 'default'],
+    mapboxgl: 'mapbox-gl',
 
     // Window
     'window.jQuery': 'jquery',

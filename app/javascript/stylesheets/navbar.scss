@@ -11,11 +11,11 @@
 }
 
 .navbar {
-  background-color: transparentize($color: #0b68c0, $amount: 0.5);
+  background-color: transparentize($color: #0b68c0, $amount: 0.3);
   position: inherit;
   right: 0;
   left: 0;
-  z-index: 1030;  
+  z-index: 1030;
 }
 
 .navbar-brand {
