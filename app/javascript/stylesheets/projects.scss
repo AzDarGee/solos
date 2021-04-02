@@ -1,3 +1,12 @@
+  
+.fas.fa-trash:hover {
+color: #f44336 !important;
+}
+
+.fas.fa-edit:hover {
+color: #0d47a1 !important;
+}
+
 .projects {
     margin-top: 4rem;
     text-align: center;
@@ -7,4 +16,14 @@
     max-width: 21rem;
     display: inline-block;
     padding: 0.5rem;
+}
+
+.edit-project {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.show-project {
+    margin-top: 4rem;
+    text-align: center;
 }

@@ -1,4 +1,13 @@
+.container-messages {
+    margin-top: 4rem;
+}
+
 .system-messages {
-    // margin-top: 4rem;
     padding: 1rem !important;
+    z-index: 2000;
+    text-align: center;
+}
+
+.btn-close {
+    float: right;
 }

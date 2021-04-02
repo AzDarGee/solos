@@ -28,12 +28,11 @@
             <a class="btn btn-link link-danger p-md-1 my-1" data-mdb-toggle="collapse" href="#collapseContent-<%= project.id %>"
               role="button" aria-expanded="false" aria-controls="collapseContent-<%= project.id %>">Read more</a>
             <div>
-              <i class="fas fa-edit text-muted p-md-1 my-1 me-2" data-mdb-toggle="tooltip"
-                data-mdb-placement="top" title="Share this post">
+              <i class="fas fa-edit text-muted p-md-1 my-1 me-2"
+                data-mdb-placement="top">
                 <%= link_to 'Edit', edit_project_path(project) %>
               </i>
-              <i class="fas fa-trash text-muted p-md-1 my-1 me-0" data-mdb-toggle="tooltip" data-mdb-placement="top"
-                title="I like it">
+              <i class="fas fa-trash text-muted p-md-1 my-1 me-0" data-mdb-placement="top">
                 <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
               </i>
             </div>
