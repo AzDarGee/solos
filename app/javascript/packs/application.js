@@ -10,7 +10,7 @@ import "channels"
 // import 'mdbootstrap/css/mdb'
 // import 'mdbootstrap/js/mdb'
 import "@fortawesome/fontawesome-free/css/all"
-// import 'src/bootstrap.js'
+import '../src/bootstrap.js'
 import "bootstrap";
 
 // Import MapBox & Map
