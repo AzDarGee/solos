@@ -7,11 +7,11 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-// import 'mdbootstrap/css/mdb'
-// import 'mdbootstrap/js/mdb'
+
 import "@fortawesome/fontawesome-free/css/all"
-import '../src/bootstrap.js'
-import "bootstrap";
+// import '../src/bootstrap.js'
+import {Alert} from "bootstrap";
+
 
 // Import MapBox & Map
 import "mapbox-gl/dist/mapbox-gl.css"

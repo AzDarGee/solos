@@ -1,6 +1,10 @@
   .main-bg-image {
     background-image: url('../images/solos-workspace.jpeg');
     height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   
   .display-1 {

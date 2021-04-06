@@ -7,8 +7,8 @@ $( document ).on('turbolinks:load', function() {
     let map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        center: [-75.6972, 45.4215], // starting position [lng, lat]
+        zoom: 11 // starting zoom
     });
 
 })
