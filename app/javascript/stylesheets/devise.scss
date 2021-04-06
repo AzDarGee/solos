@@ -12,3 +12,15 @@
     margin-top: 4rem;
     text-align: center;
 }
+
+.sign-in {
+    a.link {
+        font-size: .875rem;
+        color: #6582B0;
+    }
+    a.link:hover, 
+    a.link:active {
+        color: #426193;
+    }
+    margin-top: 5rem;
+}
