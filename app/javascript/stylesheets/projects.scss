@@ -6,15 +6,27 @@ color: #f44336 !important;
 color: #0d47a1 !important;
 }
 
-.projects {
+.all-projects {
     margin-top: 4rem;
     text-align: center;
 }
+
+.user-projects {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.new-project {
+    margin-top: 4rem;
+    text-align: center;
+}
+
 
 .project-card {
     max-width: 21rem;
     display: inline-block;
     padding: 0.5rem;
+    text-align: left;
 }
 
 .edit-project {
@@ -26,3 +38,4 @@ color: #0d47a1 !important;
     margin-top: 4rem;
     text-align: center;
 }
+
