@@ -11,7 +11,6 @@ import "channels"
 import "@fortawesome/fontawesome-free/css/all"
 // import '../src/bootstrap.js'
 // import {Alert} from "bootstrap";
-import "bootstrap"
 
 // Import MapBox & Map
 import "mapbox-gl/dist/mapbox-gl.css"

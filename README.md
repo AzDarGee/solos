@@ -112,3 +112,11 @@ rails webpacker:install
 rails s
 WEBPACKER_DEV_SERVER_HOST=0.0.0.0 ./bin/webpack-dev-server
 ```
+
+## Pushing to Heroku
+### https://solos-app.herokuapp.com/
+
+```
+git push heroku main
+heroku run rake db:migrate
+```
