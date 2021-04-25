@@ -23,6 +23,11 @@
       <%= form.text_area :description %>
     </div>
 
+    <div>
+      <%= form.label :images %>
+      <%= form.file_field :images, multiple: true %>
+    </div>
+
     <div class="field">
       <%= form.label :start_date %>
       <%= form.datetime_select :start_date %>

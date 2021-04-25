@@ -14,8 +14,9 @@
           </div>
         </div>
         <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
-            alt="Card image cap" />
+          <% if project.images.attached? %>
+            <%= image_tag project.images.first, class: "img-fluid" %>
+          <% end %>
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>

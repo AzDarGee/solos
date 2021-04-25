@@ -1,5 +1,12 @@
 <section class="show-project">
   <p>
+    <% if @project.images.attached? %>
+      <% @project.images.each do |image| %>
+        <%= image_tag(image) %>
+      <% end %>
+    <% end %>
+  </p>
+  <p>
     <strong>Title:</strong>
     <%= @project.title %>
   </p>
