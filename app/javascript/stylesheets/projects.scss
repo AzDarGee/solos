@@ -14,13 +14,20 @@ color: #0d47a1 !important;
 .user-projects {
     margin-top: 4rem;
     text-align: center;
+    .mask {
+        text-align: center;
+        .mask-text {
+            top: 50%;
+            position: relative;
+            color: whitesmoke;
+        }
+    }
 }
 
 .new-project {
     margin-top: 4rem;
     text-align: center;
 }
-
 
 .project-card {
     max-width: 21rem;
@@ -38,4 +45,5 @@ color: #0d47a1 !important;
     margin-top: 4rem;
     text-align: center;
 }
+
 

@@ -18,7 +18,11 @@
             <%= image_tag project.images.first, class: "img-fluid" %>
           <% end %>
           <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.45);">
+            <div class="mask-text"><%= project.title %> 
+              <br />
+            <%= project.end_date.strftime("%B %d, %Y") %></div>
+          </div>
           </a>
         </div>
         <div class="card-body">
