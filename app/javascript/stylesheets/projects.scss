@@ -61,21 +61,18 @@ color: #0d47a1 !important;
     padding-top: 3.65rem;
     z-index: 100;
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
     min-width: 100%;
     background-color: rgba(0,0,0,0.4);
     color: whitesmoke;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    text-align: -webkit-center;
     .img-wrapper {
         z-index: 100;
         padding: 5%;
         display: inline-block;
     }
     .carousel {
-        max-width: 200px;
-        max-height: 200px;
+        height: 200px;
+        width: 200px;
     }
 }
