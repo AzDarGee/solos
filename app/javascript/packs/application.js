@@ -16,6 +16,7 @@ import {Alert} from "bootstrap";
 import "mapbox-gl/dist/mapbox-gl.css"
 
 // Import Images
+import './application.scss'
 require.context('../images', true)
 
 

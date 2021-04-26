@@ -41,9 +41,41 @@ color: #0d47a1 !important;
     text-align: center;
 }
 
-.show-project {
-    margin-top: 4rem;
-    text-align: center;
+.bg-img {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    filter: blur(10px);
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-
+.show-project {
+    padding-top: 3.65rem;
+    z-index: 100;
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .img-wrapper {
+        z-index: 100;
+        padding: 5%;
+        display: inline-block;
+    }
+    .carousel {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

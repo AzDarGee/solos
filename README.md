@@ -118,5 +118,6 @@ WEBPACKER_DEV_SERVER_HOST=0.0.0.0 ./bin/webpack-dev-server
 
 ```
 git push heroku main
+heroku run rake db:setup
 heroku run rake db:migrate
 ```
