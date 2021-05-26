@@ -10,10 +10,14 @@ class User < ApplicationRecord
   has_many :projects, dependent: :delete_all
   has_many :locations, dependent: :delete_all
 
-  has_many_attached :images, :dependent => :destroy
+  has_one_attached :avatar, service: :amazon, :dependent => :destroy
 
 
   validates :email, presence: true, uniqueness: true
   validates :user_name, presence: true, uniqueness: true
 
+  def thumbnail
+      return self.avatar.variant(resize: '50x50!').processed
+  end
+    
 end

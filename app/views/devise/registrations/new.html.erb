@@ -29,6 +29,11 @@
               <%= f.email_field :email, class: "form-control" %>
               <%= f.label :email, class: "form-label" %>
             </div>
+
+            <div class="form-outline mb-4">
+              <%= f.file_field :avatar, class: "form-control" %>
+              <%= f.label :avatar, class: "form-label" %>
+            </div>
             
             <% if @minimum_password_length %>
               <em>(<%= @minimum_password_length %> characters minimum)</em>
