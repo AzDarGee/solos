@@ -7,6 +7,13 @@
     </h1>
   </p>
 
+  <div class="date">
+    <strong>Start date:</strong>
+    <%= @project.start_date.strftime("%D") %>
+    <strong>End date:</strong>
+    <%= @project.end_date.strftime("%D") %>
+  </div>
+
   <!-- Carousel wrapper -->
   <% if @project.images.attached? %>
     <div
@@ -86,22 +93,9 @@
     </div>
   <% end %>
 
-
-
-  <p>
-    <strong>Description:</strong>
+  <div class="description">
     <%= @project.description %>
-  </p>
-
-  <p>
-    <strong>Start date:</strong>
-    <%= @project.start_date %>
-  </p>
-
-  <p>
-    <strong>End date:</strong>
-    <%= @project.end_date %>
-  </p>
+  </div>
 
   <%= link_to 'Edit', edit_project_path(@project) %> |
   <%= link_to 'Back', projects_path %>

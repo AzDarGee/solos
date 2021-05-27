@@ -3,11 +3,11 @@ class ProjectsController < ApplicationController
   before_action :authenticate_user!, except: [ :all_projects ]
 
   def index
-    @projects = current_user.projects
+    @projects = current_user.projects.with_rich_text_description_and_embeds
   end
 
   def all_projects
-    @all_projects = Project.all
+    @all_projects = Project.all.with_rich_text_description_and_embeds
   end
 
   def show

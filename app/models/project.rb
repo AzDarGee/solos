@@ -1,7 +1,8 @@
 class Project < ApplicationRecord
     belongs_to :user
     has_many_attached :images, service: :amazon, :dependent => :destroy
-
+    has_rich_text :description
+    
     validates :title, presence: true
     validates :description, presence: true
     validates :user, presence: true

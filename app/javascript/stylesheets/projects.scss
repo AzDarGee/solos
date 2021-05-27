@@ -58,7 +58,7 @@ color: #0d47a1 !important;
 }
 
 .show-project {
-    padding-top: 3.65rem;
+    padding: 3.65rem;
     z-index: 100;
     position: relative;
     min-height: 100vh;
@@ -74,5 +74,9 @@ color: #0d47a1 !important;
     .carousel {
         height: 200px;
         width: 200px;
+        border-radius: 5px;
+    }
+    .description {
+        text-align: left;
     }
 }
