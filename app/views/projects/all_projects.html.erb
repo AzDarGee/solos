@@ -17,21 +17,23 @@
             </p>
           </div>
         </div>
+
         <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
-          <%= image_tag project.thumbnail(0), class: "img-fluid" %>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          <a href="<%= project_path(project) %>">
+            <% if project.images.attached? %>
+              <%= image_tag project.thumbnail(0), class: "img-fluid" %>
+            <% end %>
+          
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.45);">
+              <div class="mask-text">
+                <%= project.title %> 
+                <br />
+                <%= project.end_date.strftime("%B %d, %Y") %>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="card-body">
-          <p class="card-text collapse" id="collapseContent-<%= project.id %>">
-            <%= project.description %>
-          </p>
-          <div class="d-flex justify-content-between">
-            <a class="btn btn-link link-danger p-md-1 my-1" data-mdb-toggle="collapse" href="#collapseContent-<%= project.id %>"
-              role="button" aria-expanded="false" aria-controls="collapseContent-<%= project.id %>">Read more</a>
-          </div>
-        </div>
+
       </div>
     </section>
   <% end %>

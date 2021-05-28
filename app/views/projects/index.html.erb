@@ -15,36 +15,23 @@
             <p class="card-text"><i class="far fa-clock pe-2"></i><%= project.end_date.strftime("%B %d, %Y") %></p>
           </div>
         </div>
+
         <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
-          <% if project.images.attached? %>
-            <%= image_tag project.thumbnail(0), class: "img-fluid" %>
-          <% end %>
-          <a href="#!">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.45);">
-            <div class="mask-text"><%= project.title %> 
-              <br />
-            <%= project.end_date.strftime("%B %d, %Y") %></div>
-          </div>
+          <a href="<%= project_path(project) %>">
+            <% if project.images.attached? %>
+              <%= image_tag project.thumbnail(0), class: "img-fluid" %>
+            <% end %>
+          
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.45);">
+              <div class="mask-text">
+                <%= project.title %> 
+                <br />
+                <%= project.end_date.strftime("%B %d, %Y") %>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="card-body">
-          <p class="card-text collapse" id="collapseContent-<%= project.id %>">
-            <%= project.description %>
-          </p>
-          <div class="d-flex justify-content-between">
-            <a class="btn btn-link link-danger p-md-1 my-1" data-mdb-toggle="collapse" href="#collapseContent-<%= project.id %>"
-              role="button" aria-expanded="false" aria-controls="collapseContent-<%= project.id %>">Read more</a>
-            <div>
-              <i class="fas fa-edit text-muted p-md-1 my-1 me-2"
-                data-mdb-placement="top">
-                <%= link_to 'Edit', edit_project_path(project) %>
-              </i>
-              <i class="fas fa-trash text-muted p-md-1 my-1 me-0" data-mdb-placement="top">
-                <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-              </i>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   <% end %>
