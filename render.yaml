@@ -1,7 +1,7 @@
 databases:
   - name: solos
-    databaseName: solos-prod
-    user: mysite
+    databaseName: solos
+    user: ashishdarji
     plan: free
 
 services:
